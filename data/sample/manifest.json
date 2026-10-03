@@ -1,0 +1,13 @@
+{
+  "source": "sample of the full dataset",
+  "skins_per_mille": 50,
+  "builder_version": 2,
+  "built_at": "2026-10-02T15:38:32+00:00",
+  "rows": {
+    "sales": 37221,
+    "stickers": 14482,
+    "keychains": 1150
+  },
+  "sold_at_min": "2022-02-10T14:30:39.850026+00:00",
+  "sold_at_max": "2026-08-10T11:52:52.891778+00:00"
+}

@@ -1,0 +1,9 @@
+# Default parameters for `skinprice train target_encoded_hgb`.
+# Command-line `--set key=value` overrides them.
+
+[params]
+max_iter = 800
+learning_rate = 0.06
+max_leaf_nodes = 63
+min_samples_leaf = 40
+l2_regularization = 0.1

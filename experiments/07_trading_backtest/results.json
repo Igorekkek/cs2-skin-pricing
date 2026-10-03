@@ -1,0 +1,465 @@
+{
+  "model_trading_split": {
+    "model": "premium_catboost",
+    "note": "trained before the 21-day trading window",
+    "params": {
+      "quantile_mode": "multi",
+      "iterations": 3000,
+      "learning_rate": 0.06,
+      "depth": 6,
+      "l2_leaf_reg": 3.0,
+      "max_ctr_complexity": 1,
+      "has_time": false,
+      "early_stopping_rounds": 150,
+      "thread_count": -1,
+      "random_seed": 42,
+      "max_train_rows": null
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 83338,
+        "mae_usd": 1.8711512677467983,
+        "median_ape": 5.46919513090898,
+        "mean_ape": 12.574197241028672,
+        "p90_ape": 30.771549786385062,
+        "within_10pct": 66.05150111593751,
+        "within_20pct": 81.59903045429456,
+        "rmse_log": 0.24974851596676584,
+        "median_ratio": 0.9999999995713686,
+        "interval_coverage": 70.05447694929084,
+        "interval_width": 21.932654998887784
+      },
+      "test": {
+        "rows": 478713,
+        "mae_usd": 1.828155765364585,
+        "median_ape": 7.1435907239030625,
+        "mean_ape": 13.290997893648408,
+        "p90_ape": 30.79726360221092,
+        "within_10pct": 62.283038062471675,
+        "within_20pct": 81.89499762905959,
+        "rmse_log": 0.25267075322137034,
+        "median_ratio": 0.964970529378609,
+        "interval_coverage": 61.626694909058244,
+        "interval_width": 20.736111543538424
+      }
+    },
+    "size_mb": 4.63,
+    "fit_minutes": 6.0,
+    "info": {
+      "multi_best_iteration": 1921,
+      "fit_seconds": 357.2
+    },
+    "finished_at": "2026-10-02T21:38:18+00:00"
+  },
+  "tables": {
+    "resale_estimator_bias": [
+      {
+        "segment": "charm",
+        "lots": 1552,
+        "coverage_pct": 0.9,
+        "median_ratio": 0.955,
+        "mean_ratio": 0.9148
+      },
+      {
+        "segment": "clean",
+        "lots": 93147,
+        "coverage_pct": 56.7,
+        "median_ratio": 0.9833,
+        "mean_ratio": 0.9889
+      },
+      {
+        "segment": "craft",
+        "lots": 19781,
+        "coverage_pct": 12.0,
+        "median_ratio": 0.9773,
+        "mean_ratio": 0.9865
+      }
+    ],
+    "money": [
+      {
+        "segment": "clean",
+        "scope": "all lots",
+        "signal": "model @10%",
+        "trades": 11343,
+        "capital_usd": 24097,
+        "profit_usd": 1421,
+        "roi_pct": 5.9,
+        "roi_ci90": "4.77 .. 7.06",
+        "random_roi_pct": -6.4,
+        "edge_pp": 12.3,
+        "profitable_pct": 66.0,
+        "avg_ticket_usd": 2.12,
+        "profit_per_month_usd": 6090
+      },
+      {
+        "segment": "clean",
+        "scope": "all lots",
+        "signal": "model @15%",
+        "trades": 7114,
+        "capital_usd": 10190,
+        "profit_usd": 942,
+        "roi_pct": 9.25,
+        "roi_ci90": "7.51 .. 10.99",
+        "random_roi_pct": -6.61,
+        "edge_pp": 15.9,
+        "profitable_pct": 68.3,
+        "avg_ticket_usd": 1.43,
+        "profit_per_month_usd": 4038
+      },
+      {
+        "segment": "clean",
+        "scope": "all lots",
+        "signal": "CSFloat reference @10%",
+        "trades": 13448,
+        "capital_usd": 57038,
+        "profit_usd": 1593,
+        "roi_pct": 2.79,
+        "roi_ci90": "1.54 .. 3.85",
+        "random_roi_pct": -6.35,
+        "edge_pp": 9.1,
+        "profitable_pct": 73.5,
+        "avg_ticket_usd": 4.24,
+        "profit_per_month_usd": 6827
+      },
+      {
+        "segment": "clean",
+        "scope": "all lots",
+        "signal": "CSFloat reference @15%",
+        "trades": 8354,
+        "capital_usd": 18036,
+        "profit_usd": 1825,
+        "roi_pct": 10.12,
+        "roi_ci90": "9.03 .. 11.19",
+        "random_roi_pct": -6.57,
+        "edge_pp": 16.7,
+        "profitable_pct": 81.3,
+        "avg_ticket_usd": 2.16,
+        "profit_per_month_usd": 7823
+      },
+      {
+        "segment": "clean",
+        "scope": "on sale >10 min",
+        "signal": "model @10%",
+        "trades": 4347,
+        "capital_usd": 17448,
+        "profit_usd": 396,
+        "roi_pct": 2.27,
+        "roi_ci90": "1.04 .. 3.49",
+        "random_roi_pct": -7.5,
+        "edge_pp": 9.8,
+        "profitable_pct": 55.9,
+        "avg_ticket_usd": 4.01,
+        "profit_per_month_usd": 1695
+      },
+      {
+        "segment": "clean",
+        "scope": "on sale >10 min",
+        "signal": "model @15%",
+        "trades": 2439,
+        "capital_usd": 6760,
+        "profit_usd": 289,
+        "roi_pct": 4.28,
+        "roi_ci90": "2.28 .. 6.22",
+        "random_roi_pct": -7.93,
+        "edge_pp": 12.2,
+        "profitable_pct": 60.5,
+        "avg_ticket_usd": 2.77,
+        "profit_per_month_usd": 1239
+      },
+      {
+        "segment": "clean",
+        "scope": "on sale >10 min",
+        "signal": "CSFloat reference @10%",
+        "trades": 4904,
+        "capital_usd": 37144,
+        "profit_usd": 93,
+        "roi_pct": 0.25,
+        "roi_ci90": "-1.47 .. 1.67",
+        "random_roi_pct": -7.52,
+        "edge_pp": 7.8,
+        "profitable_pct": 64.3,
+        "avg_ticket_usd": 7.57,
+        "profit_per_month_usd": 398
+      },
+      {
+        "segment": "clean",
+        "scope": "on sale >10 min",
+        "signal": "CSFloat reference @15%",
+        "trades": 2308,
+        "capital_usd": 10295,
+        "profit_usd": 634,
+        "roi_pct": 6.15,
+        "roi_ci90": "4.75 .. 7.63",
+        "random_roi_pct": -7.32,
+        "edge_pp": 13.5,
+        "profitable_pct": 74.8,
+        "avg_ticket_usd": 4.46,
+        "profit_per_month_usd": 2715
+      },
+      {
+        "segment": "craft",
+        "scope": "all lots",
+        "signal": "model @10%",
+        "trades": 1044,
+        "capital_usd": 16952,
+        "profit_usd": -474,
+        "roi_pct": -2.8,
+        "roi_ci90": "-9.68 .. 2.98",
+        "random_roi_pct": -7.75,
+        "edge_pp": 5.0,
+        "profitable_pct": 73.8,
+        "avg_ticket_usd": 16.24,
+        "profit_per_month_usd": -2033
+      },
+      {
+        "segment": "craft",
+        "scope": "all lots",
+        "signal": "model @15%",
+        "trades": 539,
+        "capital_usd": 5747,
+        "profit_usd": 209,
+        "roi_pct": 3.64,
+        "roi_ci90": "0.59 .. 7.04",
+        "random_roi_pct": -7.81,
+        "edge_pp": 11.5,
+        "profitable_pct": 75.7,
+        "avg_ticket_usd": 10.66,
+        "profit_per_month_usd": 896
+      },
+      {
+        "segment": "craft",
+        "scope": "all lots",
+        "signal": "CSFloat reference @10%",
+        "trades": 1296,
+        "capital_usd": 19926,
+        "profit_usd": 1122,
+        "roi_pct": 5.63,
+        "roi_ci90": "4.81 .. 6.50",
+        "random_roi_pct": -8.3,
+        "edge_pp": 13.9,
+        "profitable_pct": 79.6,
+        "avg_ticket_usd": 15.38,
+        "profit_per_month_usd": 4809
+      },
+      {
+        "segment": "craft",
+        "scope": "all lots",
+        "signal": "CSFloat reference @15%",
+        "trades": 572,
+        "capital_usd": 4360,
+        "profit_usd": 535,
+        "roi_pct": 12.26,
+        "roi_ci90": "10.21 .. 14.47",
+        "random_roi_pct": -7.99,
+        "edge_pp": 20.3,
+        "profitable_pct": 90.9,
+        "avg_ticket_usd": 7.62,
+        "profit_per_month_usd": 2291
+      },
+      {
+        "segment": "craft",
+        "scope": "on sale >10 min",
+        "signal": "model @10%",
+        "trades": 694,
+        "capital_usd": 14416,
+        "profit_usd": -741,
+        "roi_pct": -5.14,
+        "roi_ci90": "-12.25 .. 1.18",
+        "random_roi_pct": -8.89,
+        "edge_pp": 3.8,
+        "profitable_pct": 66.1,
+        "avg_ticket_usd": 20.77,
+        "profit_per_month_usd": -3175
+      },
+      {
+        "segment": "craft",
+        "scope": "on sale >10 min",
+        "signal": "model @15%",
+        "trades": 356,
+        "capital_usd": 4358,
+        "profit_usd": 88,
+        "roi_pct": 2.01,
+        "roi_ci90": "-1.33 .. 5.99",
+        "random_roi_pct": -9.19,
+        "edge_pp": 11.2,
+        "profitable_pct": 68.5,
+        "avg_ticket_usd": 12.24,
+        "profit_per_month_usd": 376
+      },
+      {
+        "segment": "craft",
+        "scope": "on sale >10 min",
+        "signal": "CSFloat reference @10%",
+        "trades": 698,
+        "capital_usd": 12884,
+        "profit_usd": 514,
+        "roi_pct": 3.99,
+        "roi_ci90": "2.94 .. 5.05",
+        "random_roi_pct": -8.83,
+        "edge_pp": 12.8,
+        "profitable_pct": 73.4,
+        "avg_ticket_usd": 18.46,
+        "profit_per_month_usd": 2201
+      },
+      {
+        "segment": "craft",
+        "scope": "on sale >10 min",
+        "signal": "CSFloat reference @15%",
+        "trades": 241,
+        "capital_usd": 2074,
+        "profit_usd": 166,
+        "roi_pct": 8.0,
+        "roi_ci90": "4.54 .. 11.94",
+        "random_roi_pct": -9.95,
+        "edge_pp": 17.9,
+        "profitable_pct": 86.3,
+        "avg_ticket_usd": 8.6,
+        "profit_per_month_usd": 711
+      }
+    ],
+    "quick_resale_p25": [
+      {
+        "signal": "model @10%",
+        "trades": 11343,
+        "capital_usd": 24097,
+        "profit_usd": -143,
+        "roi_pct": -0.59,
+        "roi_ci90": "-1.54 .. 0.43",
+        "random_roi_pct": -10.08,
+        "edge_pp": 9.5,
+        "profitable_pct": 50.3,
+        "avg_ticket_usd": 2.12,
+        "profit_per_month_usd": -612
+      },
+      {
+        "signal": "model @15%",
+        "trades": 7114,
+        "capital_usd": 10190,
+        "profit_usd": 137,
+        "roi_pct": 1.35,
+        "roi_ci90": "-0.38 .. 3.11",
+        "random_roi_pct": -10.11,
+        "edge_pp": 11.5,
+        "profitable_pct": 54.0,
+        "avg_ticket_usd": 1.43,
+        "profit_per_month_usd": 589
+      }
+    ],
+    "time_on_market_clean_model15": [
+      {
+        "time_on_market": "<1 min",
+        "lots": 31518,
+        "share_pct": 33.8,
+        "median_price_to_model": 1.031,
+        "trades": 4416,
+        "roi_pct": 19.55,
+        "random_roi_pct": -2.12,
+        "edge_pp": 21.7
+      },
+      {
+        "time_on_market": "1-10 min",
+        "lots": 3592,
+        "share_pct": 3.9,
+        "median_price_to_model": 1.02,
+        "trades": 259,
+        "roi_pct": 15.59,
+        "random_roi_pct": -2.06,
+        "edge_pp": 17.7
+      },
+      {
+        "time_on_market": "10-60 min",
+        "lots": 4801,
+        "share_pct": 5.2,
+        "median_price_to_model": 1.011,
+        "trades": 461,
+        "roi_pct": 15.1,
+        "random_roi_pct": -3.31,
+        "edge_pp": 18.4
+      },
+      {
+        "time_on_market": "1-6 h",
+        "lots": 10422,
+        "share_pct": 11.2,
+        "median_price_to_model": 1.016,
+        "trades": 521,
+        "roi_pct": 7.62,
+        "random_roi_pct": -6.04,
+        "edge_pp": 13.7
+      },
+      {
+        "time_on_market": "6-24 h",
+        "lots": 14658,
+        "share_pct": 15.7,
+        "median_price_to_model": 1.029,
+        "trades": 548,
+        "roi_pct": 2.08,
+        "random_roi_pct": -6.4,
+        "edge_pp": 8.5
+      },
+      {
+        "time_on_market": "1-7 d",
+        "lots": 19257,
+        "share_pct": 20.7,
+        "median_price_to_model": 1.046,
+        "trades": 600,
+        "roi_pct": 2.64,
+        "random_roi_pct": -7.63,
+        "edge_pp": 10.3
+      },
+      {
+        "time_on_market": ">7 d",
+        "lots": 8899,
+        "share_pct": 9.6,
+        "median_price_to_model": 1.088,
+        "trades": 309,
+        "roi_pct": -1.49,
+        "random_roi_pct": -12.09,
+        "edge_pp": 10.6
+      }
+    ],
+    "float_tolerance_clean_access_model10": [
+      {
+        "float_tolerance": 0.01,
+        "trades": 4347,
+        "capital_usd": 17448,
+        "profit_usd": 396,
+        "roi_pct": 2.27,
+        "roi_ci90": "1.04 .. 3.49",
+        "random_roi_pct": -7.5,
+        "edge_pp": 9.8,
+        "profitable_pct": 55.9,
+        "avg_ticket_usd": 4.01,
+        "profit_per_month_usd": 1695
+      },
+      {
+        "float_tolerance": 0.05,
+        "trades": 5335,
+        "capital_usd": 22921,
+        "profit_usd": -1468,
+        "roi_pct": -6.4,
+        "roi_ci90": "-9.20 .. -3.85",
+        "random_roi_pct": -9.35,
+        "edge_pp": 2.9,
+        "profitable_pct": 54.0,
+        "avg_ticket_usd": 4.3,
+        "profit_per_month_usd": -6291
+      }
+    ]
+  }
+}

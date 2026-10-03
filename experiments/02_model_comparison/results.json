@@ -1,0 +1,367 @@
+{
+  "csfloat_reference": {
+    "model": "csfloat_reference",
+    "note": "",
+    "params": {},
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 2.8168922226416475,
+        "median_ape": 5.872909698996631,
+        "mean_ape": 15.836501357602334,
+        "p90_ape": 41.484944042540064,
+        "within_10pct": 62.49162841104198,
+        "within_20pct": 76.38907492419906,
+        "rmse_log": 0.4484298150756535,
+        "median_ratio": 1.0,
+        "interval_coverage": 70.04615028676497,
+        "interval_width": 39.702868852459005
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 2.3687062541097395,
+        "median_ape": 5.994561601015668,
+        "mean_ape": 14.99981377906221,
+        "p90_ape": 40.52741692210391,
+        "within_10pct": 62.17944034485278,
+        "within_20pct": 76.3248581378924,
+        "rmse_log": 0.4292087010097284,
+        "median_ratio": 1.0,
+        "interval_coverage": 70.0750103504542,
+        "interval_width": 39.680133863614294
+      }
+    },
+    "size_mb": 0.0,
+    "fit_minutes": 0.0,
+    "info": {
+      "fit_seconds": 0.0
+    },
+    "finished_at": "2026-10-02T18:15:53+00:00"
+  },
+  "recent_median": {
+    "model": "recent_median",
+    "note": "",
+    "params": {},
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 3.4131905249209393,
+        "median_ape": 7.6923076923076925,
+        "mean_ape": 18.633634621042017,
+        "p90_ape": 44.004084913957605,
+        "within_10pct": 56.275343082936566,
+        "within_20pct": 73.3485138146439,
+        "rmse_log": 0.4261485652030653,
+        "median_ratio": 1.0,
+        "interval_coverage": 69.99866054576671,
+        "interval_width": 37.49313270685642
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 2.9242425447571163,
+        "median_ape": 7.907361390602576,
+        "mean_ape": 18.165236873661424,
+        "p90_ape": 44.44444444444444,
+        "within_10pct": 55.64221524073939,
+        "within_20pct": 73.09429872628527,
+        "rmse_log": 0.40781966446951295,
+        "median_ratio": 1.0,
+        "interval_coverage": 69.54531063539612,
+        "interval_width": 37.47265311344884
+      }
+    },
+    "size_mb": 0.0,
+    "fit_minutes": 0.0,
+    "info": {
+      "fit_seconds": 0.0
+    },
+    "finished_at": "2026-10-02T18:15:54+00:00"
+  },
+  "target_encoded_hgb": {
+    "model": "target_encoded_hgb",
+    "note": "",
+    "params": {
+      "max_iter": 800,
+      "learning_rate": 0.06,
+      "max_leaf_nodes": 63,
+      "min_samples_leaf": 40,
+      "l2_regularization": 0.1,
+      "random_state": 42
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 1.7295203356654811,
+        "median_ape": 4.474658895631859,
+        "mean_ape": 11.574114943274038,
+        "p90_ape": 25.543130289633215,
+        "within_10pct": 70.36396624575332,
+        "within_20pct": 85.11866346821232,
+        "rmse_log": 0.22353567539981842,
+        "median_ratio": 0.9999999999999998,
+        "interval_coverage": 70.15574199676095,
+        "interval_width": 17.96810168484586
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.3682834065142258,
+        "median_ape": 4.6524072210939575,
+        "mean_ape": 11.02144045998736,
+        "p90_ape": 26.120958683223538,
+        "within_10pct": 69.41562553274396,
+        "within_20pct": 84.69533133630452,
+        "rmse_log": 0.2113638596701744,
+        "median_ratio": 1.000240508526993,
+        "interval_coverage": 71.0783955578286,
+        "interval_width": 18.6928643938507
+      }
+    },
+    "size_mb": 7.77,
+    "fit_minutes": 5.1,
+    "info": {
+      "valid_mae_curve_every_50": [
+        0.18430407444893857,
+        0.12028100996544144,
+        0.1131239890996913,
+        0.1103058155927353,
+        0.1085031598114113,
+        0.10715812206779422,
+        0.10642386312669788,
+        0.10588219695259576,
+        0.10557513405075601,
+        0.10525721829904237,
+        0.10472093605691196,
+        0.1043609717618741,
+        0.10403420793460016,
+        0.10382336799103035,
+        0.10364769937693953,
+        0.10345445372934173
+      ],
+      "best_iteration": 800,
+      "fit_seconds": 304.8
+    },
+    "finished_at": "2026-10-02T18:21:29+00:00"
+  },
+  "quantile_mlp": {
+    "model": "quantile_mlp",
+    "note": "",
+    "params": {
+      "width": 384,
+      "blocks": 4,
+      "dropout": 0.1,
+      "epochs": 25,
+      "batch_size": 4096,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "patience": 4,
+      "min_category_count": 2,
+      "max_vocab": 100000,
+      "threads": 0,
+      "seed": 42
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 1.649079609312234,
+        "median_ape": 4.545092381661937,
+        "mean_ape": 11.893899061560939,
+        "p90_ape": 24.626680928639857,
+        "within_10pct": 71.23826455438792,
+        "within_20pct": 86.24989345250417,
+        "rmse_log": 0.20911092881014104,
+        "median_ratio": 0.9999999999999996,
+        "interval_coverage": 69.99866054576671,
+        "interval_width": 17.218895946489326
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.4163684532049896,
+        "median_ape": 4.673719168874648,
+        "mean_ape": 11.473851766746234,
+        "p90_ape": 25.204321465768764,
+        "within_10pct": 70.37212927108449,
+        "within_20pct": 85.70419619590366,
+        "rmse_log": 0.19988100868412104,
+        "median_ratio": 0.9998469952238338,
+        "interval_coverage": 68.99430116168627,
+        "interval_width": 17.199260958374108
+      }
+    },
+    "size_mb": 11.72,
+    "fit_minutes": 43.9,
+    "info": {
+      "parameters": 2982971,
+      "best_valid_mae": 0.09946142882108688,
+      "best_epoch": 18,
+      "fit_seconds": 2632.8
+    },
+    "finished_at": "2026-10-02T19:05:30+00:00"
+  },
+  "premium_catboost": {
+    "model": "premium_catboost",
+    "note": "",
+    "params": {
+      "quantile_mode": "multi",
+      "iterations": 3000,
+      "learning_rate": 0.06,
+      "depth": 6,
+      "l2_leaf_reg": 3.0,
+      "max_ctr_complexity": 1,
+      "early_stopping_rounds": 150,
+      "thread_count": -1,
+      "random_seed": 42,
+      "max_train_rows": null
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 1.6909726695702736,
+        "median_ape": 4.682091074100965,
+        "mean_ape": 11.834580661412947,
+        "p90_ape": 25.850831120441377,
+        "within_10pct": 69.66379698744566,
+        "within_20pct": 84.91409227621982,
+        "rmse_log": 0.2190629856147876,
+        "median_ratio": 1.0000000000000004,
+        "interval_coverage": 70.06928631443078,
+        "interval_width": 18.502323540859006
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.378889223943149,
+        "median_ape": 4.960349103326989,
+        "mean_ape": 11.389951814169956,
+        "p90_ape": 26.748639030449866,
+        "within_10pct": 68.69718224105598,
+        "within_20pct": 84.4554443389104,
+        "rmse_log": 0.20648159372707778,
+        "median_ratio": 0.9973749011491422,
+        "interval_coverage": 65.86359319061883,
+        "interval_width": 18.065138939331554
+      }
+    },
+    "size_mb": 6.23,
+    "fit_minutes": 21.8,
+    "info": {
+      "multi_best_iteration": 2526,
+      "fit_seconds": 1309.6
+    },
+    "finished_at": "2026-10-02T19:27:23+00:00"
+  },
+  "ensemble_all3": {
+    "model": "geometric mean of 3",
+    "metrics": {
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.2739488118351572,
+        "median_ape": 4.598619420788165,
+        "mean_ape": 10.588953957371825,
+        "p90_ape": 24.65250822984618,
+        "within_10pct": 70.35021066218553,
+        "within_20pct": 85.93251503860111,
+        "rmse_log": 0.1922516859050565,
+        "median_ratio": 0.9991448493107267,
+        "interval_coverage": 71.71159981490952,
+        "interval_width": 18.366978135804334
+      }
+    }
+  },
+  "ensemble_catboost_mlp": {
+    "model": "geometric mean of 2",
+    "metrics": {
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.283709086882235,
+        "median_ape": 4.679816038140375,
+        "mean_ape": 10.721487109556433,
+        "p90_ape": 24.50829353525808,
+        "within_10pct": 70.36786731935413,
+        "within_20pct": 86.06220014125326,
+        "rmse_log": 0.19003833575894913,
+        "median_ratio": 0.9985877487847379,
+        "interval_coverage": 70.52312413238839,
+        "interval_width": 18.07336998951236
+      }
+    }
+  }
+}

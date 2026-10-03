@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CS2 Skin Pricer</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --text: #1d2330; --muted: #667085; --line: #e3e6ec;
+    --accent: #2f6fde; --accent-soft: #dbe7fb; --good: #1f8a4c; --bad: #c2410c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12151b; --card: #1a1f27; --text: #e6e9ef; --muted: #98a2b3; --line: #2a313c;
+            --accent: #6a9cf2; --accent-soft: #233552; --good: #4ade80; --bad: #fb923c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  p.lead { color: var(--muted); margin: 0 0 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px; margin-bottom: 16px; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 14px; }
+  .tabs button { background: none; border: 1px solid var(--line); color: var(--text); border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+  .tabs button.active { background: var(--accent-soft); border-color: var(--accent); }
+  label { display: block; font-size: 13px; color: var(--muted); margin: 10px 0 4px; }
+  input, textarea { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--text); font: inherit; }
+  textarea { min-height: 120px; font-family: ui-monospace, monospace; font-size: 13px; }
+  .row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .sticker { display: grid; grid-template-columns: 1fr 90px; gap: 8px; margin-bottom: 6px; }
+  .primary { margin-top: 14px; background: var(--accent); color: #fff; border: 0; border-radius: 6px; padding: 9px 18px; font: inherit; cursor: pointer; }
+  .error { color: var(--bad); margin-top: 10px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  th { font-size: 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .03em; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .bar { position: relative; height: 8px; background: var(--line); border-radius: 4px; min-width: 120px; }
+  .bar span { position: absolute; top: 0; height: 8px; background: var(--accent); border-radius: 4px; opacity: .55; }
+  .bar i { position: absolute; top: -3px; width: 2px; height: 14px; background: var(--text); }
+  .muted { color: var(--muted); font-size: 13px; }
+  .big { font-size: 28px; font-weight: 650; }
+  .good { color: var(--good); } .bad { color: var(--bad); }
+  @media (max-width: 600px) { .row { grid-template-columns: 1fr; } .hide-sm { display: none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>CS2 Skin Pricer</h1>
+  <p class="lead">Estimates the sale price of a CS2 weapon skin on CSFloat, stickers and charms included, with several models side by side.</p>
+
+  <div class="card">
+    <div class="tabs">
+      <button data-tab="manual" class="active">Describe the item</button>
+      <button data-tab="csfloat">CSFloat link or JSON</button>
+    </div>
+
+    <form id="manual">
+      <label for="name">Item (market hash name)</label>
+      <input id="name" list="items" placeholder="AK-47 | Redline (Field-Tested)" required>
+      <datalist id="items"></datalist>
+      <div class="row">
+        <div><label for="float">Float</label><input id="float" inputmode="decimal" placeholder="0.153"></div>
+        <div><label for="seed">Pattern seed</label><input id="seed" inputmode="numeric" placeholder="661"></div>
+        <div><label for="price">Asking price, $ (optional)</label><input id="price" inputmode="decimal"></div>
+      </div>
+      <label>Stickers (name, wear 0–1)</label>
+      <div id="stickers"></div>
+      <datalist id="sticker-names"></datalist>
+      <button class="primary" type="submit">Estimate</button>
+    </form>
+
+    <form id="csfloat" hidden>
+      <label for="url">CSFloat item link or listing id</label>
+      <input id="url" placeholder="https://csfloat.com/item/123456789012345678">
+      <label for="json">…or paste listing JSON from the CSFloat API</label>
+      <textarea id="json" placeholder='{"id": "...", "price": 1234, "item": {...}, "reference": {...}}'></textarea>
+      <button class="primary" type="submit">Estimate</button>
+    </form>
+    <div id="error" class="error"></div>
+  </div>
+
+  <div id="result"></div>
+  <p class="muted" id="models-note"></p>
+</main>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const usd = (v) => v == null ? "—" : "$" + Number(v).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+
+document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => {
+  document.querySelectorAll(".tabs button").forEach((x) => x.classList.toggle("active", x === b));
+  $("#manual").hidden = b.dataset.tab !== "manual";
+  $("#csfloat").hidden = b.dataset.tab !== "csfloat";
+}));
+
+for (let i = 0; i < 5; i++) {
+  $("#stickers").insertAdjacentHTML("beforeend",
+    `<div class="sticker"><input class="s-name" list="sticker-names" placeholder="Sticker ${i + 1}"><input class="s-wear" inputmode="decimal" placeholder="wear"></div>`);
+}
+
+function autocomplete(input, list, kind) {
+  let timer;
+  input.addEventListener("input", () => {
+    clearTimeout(timer);
+    timer = setTimeout(async () => {
+      if (input.value.length < 2) return;
+      const r = await fetch(`/api/search?kind=${kind}&q=${encodeURIComponent(input.value)}`);
+      const names = r.ok ? await r.json() : [];
+      list.innerHTML = names.map((n) => `<option value="${n.replace(/"/g, "&quot;")}">`).join("");
+    }, 200);
+  });
+}
+autocomplete($("#name"), $("#items"), "items");
+document.querySelectorAll(".s-name").forEach((el) => autocomplete(el, $("#sticker-names"), "stickers"));
+
+async function predict(body) {
+  $("#error").textContent = "";
+  $("#result").innerHTML = '<div class="card muted">Estimating…</div>';
+  const r = await fetch("/api/predict", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)});
+  const data = await r.json();
+  if (!r.ok) { $("#result").innerHTML = ""; $("#error").textContent = data.detail || "Request failed"; return; }
+  render(data);
+}
+
+$("#manual").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const stickers = [...document.querySelectorAll(".sticker")]
+    .map((row) => ({name: row.querySelector(".s-name").value.trim(), wear: row.querySelector(".s-wear").value.trim() || null}))
+    .filter((s) => s.name);
+  predict({manual: {name: $("#name").value.trim(), float_value: $("#float").value || null,
+    paint_seed: $("#seed").value || null, price_usd: $("#price").value || null, stickers}});
+});
+
+$("#csfloat").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const text = $("#json").value.trim();
+  if (text) {
+    try { predict({listing: JSON.parse(text)}); } catch { $("#error").textContent = "This is not valid JSON"; }
+  } else { predict({url: $("#url").value.trim()}); }
+});
+
+function render(d) {
+  const all = Object.values(d.models);
+  const lo = Math.min(...all.map((m) => m.low_usd), d.asking ? d.asking.price_usd : Infinity) * 0.95;
+  const hi = Math.max(...all.map((m) => m.high_usd), d.asking ? d.asking.price_usd : 0) * 1.05;
+  const pos = (v) => ((v - lo) / (hi - lo) * 100).toFixed(1) + "%";
+  const rows = Object.entries(d.models).map(([name, m]) => `
+    <tr><td><b>${name}</b><div class="muted hide-sm">${m.summary}</div></td>
+      <td class="num">${usd(m.price_usd)}</td>
+      <td class="num muted">${usd(m.low_usd)} – ${usd(m.high_usd)}</td>
+      <td class="hide-sm"><div class="bar"><span style="left:${pos(m.low_usd)};width:calc(${pos(m.high_usd)} - ${pos(m.low_usd)})"></span><i style="left:${pos(m.price_usd)}"></i></div></td></tr>`).join("");
+  const stickers = d.item.stickers.length
+    ? d.item.stickers.map((s) => `${s.name}${s.wear ? ` (wear ${Number(s.wear).toFixed(2)})` : ""} · ${usd(s.reference_usd)}`).join("<br>")
+    : "no stickers";
+  let asking = "";
+  if (d.asking) {
+    const disc = d.asking.discount_to_estimate_pct;
+    asking = `<p>Asking ${usd(d.asking.price_usd)}: <b class="${disc > 0 ? "good" : "bad"}">${disc > 0 ? disc + "% below" : -disc + "% above"}</b> the estimate${d.asking.below_interval ? ", below the whole interval" : ""}.</p>`;
+  }
+  $("#result").innerHTML = `
+    <div class="card">
+      <div class="muted">${d.item.name}${d.item.float != null ? " · float " + d.item.float : ""}${d.item.paint_seed != null ? " · seed " + d.item.paint_seed : ""}</div>
+      <div class="big">${usd(d.ensemble.price_usd)}</div>
+      <div class="muted">70% interval ${usd(d.ensemble.low_usd)} – ${usd(d.ensemble.high_usd)} · base price ${usd(d.anchor.price_usd)} (${d.anchor.source})</div>
+      ${asking}
+      <p class="muted">${stickers}</p>
+      ${d.warnings.length ? `<p class="error">${d.warnings.join("<br>")}</p>` : ""}
+    </div>
+    <div class="card"><table><thead><tr><th>Model</th><th>Estimate</th><th>70% interval</th><th class="hide-sm"></th></tr></thead><tbody>${rows}</tbody></table>
+    <p class="muted">Market data as of ${d.history.snapshot_as_of.slice(0, 10)} · ${d.history.sales_of_this_skin} earlier sales of this skin.</p></div>`;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1113 @@
+[
+ {
+  "id": "1006499817842673112",
+  "created_at": "2026-08-09T09:50:56.436759Z",
+  "type": "buy_now",
+  "price": 890,
+  "state": "sold",
+  "reference": {
+   "base_price": 830,
+   "float_factor": 1.05408,
+   "predicted_price": 875,
+   "quantity": 313,
+   "last_updated": "2026-08-10T09:51:28.082843Z"
+  },
+  "item": {
+   "def_index": 61,
+   "paint_index": 1173,
+   "paint_seed": 448,
+   "float_value": 0.2141982614994049,
+   "is_stattrak": true,
+   "is_souvenir": false,
+   "rarity": 5,
+   "quality": 9,
+   "market_hash_name": "StatTrak™ USP-S | Jawbreaker (Field-Tested)",
+   "stickers": [
+    {
+     "stickerId": 620,
+     "slot": 2,
+     "offset_x": 0.18083024,
+     "offset_y": 0.19411847,
+     "name": "Sticker | Fnatic | Cologne 2015",
+     "reference": {
+      "price": 247,
+      "quantity": 172,
+      "updated_at": "2026-08-09T01:31:37.890361Z"
+     }
+    }
+   ],
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Classified",
+   "type_name": "Skin",
+   "item_name": "USP-S | Jawbreaker",
+   "wear_name": "Field-Tested",
+   "collection": "The Kilowatt Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-10T10:31:05.275875Z"
+ },
+ {
+  "id": "1005525667305097878",
+  "created_at": "2026-08-06T17:20:00.849776Z",
+  "type": "buy_now",
+  "price": 114,
+  "state": "sold",
+  "reference": {
+   "base_price": 96,
+   "float_factor": 1,
+   "predicted_price": 96,
+   "quantity": 620,
+   "last_updated": "2026-08-10T05:24:25.53035Z"
+  },
+  "item": {
+   "def_index": 1,
+   "paint_index": 945,
+   "paint_seed": 790,
+   "float_value": 0.33499473333358765,
+   "is_stattrak": true,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 9,
+   "market_hash_name": "StatTrak™ Desert Eagle | Blue Ply (Field-Tested)",
+   "stickers": [
+    {
+     "stickerId": 7339,
+     "slot": 3,
+     "offset_x": 0.4646855,
+     "offset_y": 0.12755966,
+     "rotation": -78,
+     "name": "Sticker | KOI (Glitter) | Copenhagen 2024",
+     "reference": {
+      "price": 63,
+      "quantity": 521,
+      "updated_at": "2026-08-09T01:31:40.023028Z"
+     }
+    },
+    {
+     "stickerId": 7339,
+     "slot": 3,
+     "offset_x": 0.48389512,
+     "offset_y": 0.21341741,
+     "rotation": -75,
+     "name": "Sticker | KOI (Glitter) | Copenhagen 2024",
+     "reference": {
+      "price": 63,
+      "quantity": 521,
+      "updated_at": "2026-08-09T01:31:40.023028Z"
+     }
+    },
+    {
+     "stickerId": 7339,
+     "slot": 3,
+     "offset_x": 0.5100596,
+     "offset_y": 0.3082905,
+     "rotation": -69,
+     "name": "Sticker | KOI (Glitter) | Copenhagen 2024",
+     "reference": {
+      "price": 63,
+      "quantity": 521,
+      "updated_at": "2026-08-09T01:31:40.023028Z"
+     }
+    }
+   ],
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "Desert Eagle | Blue Ply",
+   "wear_name": "Field-Tested",
+   "collection": "The Prisma 2 Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 2,
+  "sold_at": "2026-08-10T09:44:28.658717Z"
+ },
+ {
+  "id": "1001962327232350372",
+  "created_at": "2026-07-27T21:20:34.372859Z",
+  "type": "buy_now",
+  "price": 960,
+  "state": "sold",
+  "reference": {
+   "base_price": 830,
+   "float_factor": 1.15897,
+   "predicted_price": 962,
+   "quantity": 313,
+   "last_updated": "2026-08-10T03:35:59.224311Z"
+  },
+  "item": {
+   "def_index": 61,
+   "paint_index": 1173,
+   "paint_seed": 345,
+   "float_value": 0.19517545402050018,
+   "is_stattrak": true,
+   "is_souvenir": false,
+   "rarity": 5,
+   "quality": 9,
+   "market_hash_name": "StatTrak™ USP-S | Jawbreaker (Field-Tested)",
+   "stickers": [
+    {
+     "stickerId": 9565,
+     "slot": 4,
+     "wear": 0.57,
+     "offset_x": 0.096378565,
+     "offset_y": -0.0061925948,
+     "name": "Sticker | GamerLegion | Budapest 2025",
+     "reference": {
+      "price": 1,
+      "quantity": 428,
+      "updated_at": "2026-08-09T01:31:39.193854Z"
+     }
+    }
+   ],
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Classified",
+   "type_name": "Skin",
+   "item_name": "USP-S | Jawbreaker",
+   "wear_name": "Field-Tested",
+   "collection": "The Kilowatt Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 1,
+  "sold_at": "2026-08-10T07:29:51.934968Z"
+ },
+ {
+  "id": "992364711930626505",
+  "created_at": "2026-07-01T09:43:04.569505Z",
+  "type": "buy_now",
+  "price": 300,
+  "state": "sold",
+  "reference": {
+   "base_price": 130,
+   "float_factor": 1.09082,
+   "predicted_price": 142,
+   "quantity": 1687,
+   "last_updated": "2026-08-10T04:23:27.325337Z"
+  },
+  "item": {
+   "def_index": 33,
+   "paint_index": 28,
+   "paint_seed": 600,
+   "float_value": 0.02826111949980259,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "MP7 | Anodized Navy (Factory New)",
+   "stickers": [
+    {
+     "stickerId": 6598,
+     "slot": 0,
+     "wear": 1,
+     "offset_x": 0.009031653,
+     "offset_y": 0.0056031942,
+     "name": "Sticker | Cyber Chicken (Holo)",
+     "reference": {
+      "price": 41,
+      "quantity": 2013,
+      "updated_at": "2026-08-09T01:31:36.662362Z"
+     }
+    },
+    {
+     "stickerId": 6598,
+     "slot": 4,
+     "wear": 1,
+     "offset_x": 0.17078343,
+     "offset_y": 0.018222213,
+     "name": "Sticker | Cyber Chicken (Holo)",
+     "reference": {
+      "price": 41,
+      "quantity": 2013,
+      "updated_at": "2026-08-09T01:31:36.662362Z"
+     }
+    },
+    {
+     "stickerId": 6598,
+     "slot": 4,
+     "wear": 1,
+     "offset_x": 0.17867005,
+     "offset_y": 0.18684387,
+     "name": "Sticker | Cyber Chicken (Holo)",
+     "reference": {
+      "price": 41,
+      "quantity": 2013,
+      "updated_at": "2026-08-09T01:31:36.662362Z"
+     }
+    },
+    {
+     "stickerId": 6598,
+     "slot": 4,
+     "wear": 1,
+     "offset_x": 0.018548638,
+     "offset_y": 0.0008367002,
+     "name": "Sticker | Cyber Chicken (Holo)",
+     "reference": {
+      "price": 41,
+      "quantity": 2013,
+      "updated_at": "2026-08-09T01:31:36.662362Z"
+     }
+    },
+    {
+     "stickerId": 6598,
+     "slot": 5,
+     "wear": 1,
+     "offset_x": -0.33353645,
+     "offset_y": -0.17792046,
+     "name": "Sticker | Cyber Chicken (Holo)",
+     "reference": {
+      "price": 41,
+      "quantity": 2013,
+      "updated_at": "2026-08-09T01:31:36.662362Z"
+     }
+    }
+   ],
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "MP7 | Anodized Navy",
+   "wear_name": "Factory New",
+   "collection": "The Italy Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 1,
+  "sold_at": "2026-08-10T07:09:39.234171Z"
+ },
+ {
+  "id": "1006498547786452353",
+  "created_at": "2026-08-09T09:45:53.631449Z",
+  "type": "buy_now",
+  "price": 5431,
+  "state": "sold",
+  "reference": {
+   "base_price": 5460,
+   "float_factor": 1.04196,
+   "predicted_price": 5700,
+   "keychain_price": 11,
+   "quantity": 460,
+   "last_updated": "2026-08-10T03:37:12.924187Z"
+  },
+  "item": {
+   "def_index": 4,
+   "paint_index": 957,
+   "paint_seed": 974,
+   "float_value": 0.19514599442481995,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 6,
+   "quality": 4,
+   "market_hash_name": "Glock-18 | Bullet Queen (Field-Tested)",
+   "keychains": [
+    {
+     "stickerId": 6,
+     "slot": 0,
+     "offset_x": -1.5547962,
+     "offset_y": -0.03124616,
+     "offset_z": 2.723012,
+     "pattern": 60153,
+     "name": "Charm | Lil' Crass",
+     "reference": {
+      "price": 11,
+      "quantity": 2997,
+      "updated_at": "2026-08-09T01:31:27.268914Z"
+     }
+    }
+   ],
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Covert",
+   "type_name": "Skin",
+   "item_name": "Glock-18 | Bullet Queen",
+   "wear_name": "Field-Tested",
+   "collection": "The Prisma 2 Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-10T05:54:45.464221Z"
+ },
+ {
+  "id": "995637238253618553",
+  "created_at": "2026-07-10T10:26:55.645121Z",
+  "type": "buy_now",
+  "price": 173,
+  "state": "sold",
+  "reference": {
+   "base_price": 175,
+   "float_factor": 1.08964,
+   "predicted_price": 203,
+   "keychain_price": 12,
+   "quantity": 4020,
+   "last_updated": "2026-08-09T22:54:04.098973Z"
+  },
+  "item": {
+   "def_index": 61,
+   "paint_index": 830,
+   "paint_seed": 877,
+   "float_value": 0.0650767907500267,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "USP-S | Alpine Camo (Factory New)",
+   "keychains": [
+    {
+     "stickerId": 12,
+     "slot": 0,
+     "offset_x": 17.605791,
+     "offset_y": 0.7431139,
+     "offset_z": 4.0134406,
+     "pattern": 1621,
+     "name": "Charm | Pinch O' Salt",
+     "reference": {
+      "price": 15,
+      "quantity": 5428,
+      "updated_at": "2026-08-09T01:31:27.268914Z"
+     }
+    }
+   ],
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "USP-S | Alpine Camo",
+   "wear_name": "Factory New",
+   "collection": "The Sport & Field Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-10T00:06:32.990246Z"
+ },
+ {
+  "id": "1006663029393329526",
+  "created_at": "2026-08-09T20:39:29.102405Z",
+  "type": "buy_now",
+  "price": 8319,
+  "state": "sold",
+  "reference": {
+   "base_price": 6025,
+   "float_factor": 1.161517,
+   "predicted_price": 7139,
+   "keychain_price": 141,
+   "quantity": 741,
+   "last_updated": "2026-08-09T20:39:18.331336Z"
+  },
+  "item": {
+   "def_index": 60,
+   "paint_index": 497,
+   "paint_seed": 108,
+   "float_value": 0.17946067452430725,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 6,
+   "quality": 4,
+   "market_hash_name": "M4A1-S | Golden Coil (Field-Tested)",
+   "stickers": [
+    {
+     "stickerId": 1318,
+     "slot": 0,
+     "name": "Sticker | Ninjas in Pyjamas (Holo) | Cologne 2016",
+     "reference": {
+      "price": 1043,
+      "quantity": 130,
+      "updated_at": "2026-08-09T06:34:05.840518Z"
+     }
+    },
+    {
+     "stickerId": 1318,
+     "slot": 1,
+     "name": "Sticker | Ninjas in Pyjamas (Holo) | Cologne 2016",
+     "reference": {
+      "price": 1043,
+      "quantity": 130,
+      "updated_at": "2026-08-09T06:34:05.840518Z"
+     }
+    },
+    {
+     "stickerId": 1318,
+     "slot": 2,
+     "name": "Sticker | Ninjas in Pyjamas (Holo) | Cologne 2016",
+     "reference": {
+      "price": 1043,
+      "quantity": 130,
+      "updated_at": "2026-08-09T06:34:05.840518Z"
+     }
+    },
+    {
+     "stickerId": 1318,
+     "slot": 3,
+     "name": "Sticker | Ninjas in Pyjamas (Holo) | Cologne 2016",
+     "reference": {
+      "price": 1043,
+      "quantity": 130,
+      "updated_at": "2026-08-09T06:34:05.840518Z"
+     }
+    }
+   ],
+   "keychains": [
+    {
+     "stickerId": 47,
+     "slot": 0,
+     "offset_x": 33.4989,
+     "offset_y": 1.0857754,
+     "offset_z": 4.564147,
+     "pattern": 59962,
+     "name": "Charm | Magmatude",
+     "reference": {
+      "price": 149,
+      "quantity": 776,
+      "updated_at": "2026-08-09T01:31:27.268914Z"
+     }
+    }
+   ],
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Covert",
+   "type_name": "Skin",
+   "item_name": "M4A1-S | Golden Coil",
+   "wear_name": "Field-Tested",
+   "collection": "The Shadow Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-09T23:55:01.628398Z"
+ },
+ {
+  "id": "1006710091333896897",
+  "created_at": "2026-08-09T23:46:29.543371Z",
+  "type": "buy_now",
+  "price": 202,
+  "state": "sold",
+  "reference": {
+   "base_price": 175,
+   "float_factor": 1.1056943,
+   "predicted_price": 252,
+   "keychain_price": 59,
+   "quantity": 4020,
+   "last_updated": "2026-08-09T23:45:15.049852Z"
+  },
+  "item": {
+   "def_index": 61,
+   "paint_index": 830,
+   "paint_seed": 76,
+   "float_value": 0.05533074587583542,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "USP-S | Alpine Camo (Factory New)",
+   "stickers": [
+    {
+     "stickerId": 6625,
+     "slot": 3,
+     "wear": 1,
+     "offset_x": 0.2658463,
+     "offset_y": 0.110860735,
+     "name": "Sticker | Heroic (Glitter) | Paris 2023",
+     "reference": {
+      "price": 2,
+      "quantity": 1193,
+      "updated_at": "2026-08-09T02:32:02.990452Z"
+     }
+    }
+   ],
+   "keychains": [
+    {
+     "stickerId": 31,
+     "slot": 0,
+     "offset_x": 8.140482,
+     "offset_y": 0.5536227,
+     "offset_z": 4.0625725,
+     "pattern": 76970,
+     "name": "Charm | Glamour Shot",
+     "reference": {
+      "price": 62,
+      "quantity": 1813,
+      "updated_at": "2026-08-09T01:31:27.268914Z"
+     }
+    }
+   ],
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "USP-S | Alpine Camo",
+   "wear_name": "Factory New",
+   "collection": "The Sport & Field Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-09T23:46:42.005165Z"
+ },
+ {
+  "id": "1005435744510151491",
+  "created_at": "2026-08-06T11:22:41.584728Z",
+  "type": "buy_now",
+  "price": 380,
+  "state": "sold",
+  "reference": {
+   "base_price": 174,
+   "float_factor": 1.03087,
+   "predicted_price": 179,
+   "quantity": 960,
+   "last_updated": "2026-08-09T11:21:38.397972Z"
+  },
+  "item": {
+   "def_index": 30,
+   "paint_index": 599,
+   "paint_seed": 145,
+   "float_value": 0.051536232233047485,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "Tec-9 | Ice Cap (Factory New)",
+   "stickers": [
+    {
+     "stickerId": 5935,
+     "slot": 4,
+     "offset_x": 0.003754437,
+     "offset_y": 0.24865341,
+     "name": "Sticker | Blue Gem (Glitter)",
+     "reference": {
+      "price": 232,
+      "quantity": 1140,
+      "updated_at": "2026-08-09T03:32:26.736772Z"
+     }
+    },
+    {
+     "stickerId": 5935,
+     "slot": 4,
+     "offset_x": 0.0036670268,
+     "offset_y": 0.32785395,
+     "name": "Sticker | Blue Gem (Glitter)",
+     "reference": {
+      "price": 232,
+      "quantity": 1140,
+      "updated_at": "2026-08-09T03:32:26.736772Z"
+     }
+    },
+    {
+     "stickerId": 5935,
+     "slot": 4,
+     "offset_x": 0.004487127,
+     "offset_y": 0.4093767,
+     "name": "Sticker | Blue Gem (Glitter)",
+     "reference": {
+      "price": 232,
+      "quantity": 1140,
+      "updated_at": "2026-08-09T03:32:26.736772Z"
+     }
+    },
+    {
+     "stickerId": 5935,
+     "slot": 4,
+     "offset_x": 0.0047814846,
+     "offset_y": 0.43616992,
+     "rotation": 180,
+     "name": "Sticker | Blue Gem (Glitter)",
+     "reference": {
+      "price": 232,
+      "quantity": 1140,
+      "updated_at": "2026-08-09T03:32:26.736772Z"
+     }
+    },
+    {
+     "stickerId": 7463,
+     "slot": 3,
+     "offset_x": -0.003256768,
+     "offset_y": 0.0023299754,
+     "name": "Sticker | donk | Copenhagen 2024",
+     "reference": {
+      "price": 32,
+      "quantity": 621,
+      "updated_at": "2026-08-09T02:32:01.963149Z"
+     }
+    }
+   ],
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "Tec-9 | Ice Cap",
+   "wear_name": "Factory New",
+   "collection": "The Gamma Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-09T11:30:54.465301Z"
+ },
+ {
+  "id": "1000872462004651457",
+  "created_at": "2026-07-24T21:09:50.254005Z",
+  "type": "buy_now",
+  "price": 44,
+  "state": "sold",
+  "reference": {
+   "base_price": 24,
+   "float_factor": 1,
+   "predicted_price": 24,
+   "quantity": 5563,
+   "last_updated": "2026-08-08T15:23:17.258594Z"
+  },
+  "item": {
+   "def_index": 61,
+   "paint_index": 830,
+   "paint_seed": 885,
+   "float_value": 0.29873546957969666,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "USP-S | Alpine Camo (Field-Tested)",
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "USP-S | Alpine Camo",
+   "wear_name": "Field-Tested",
+   "collection": "The Sport & Field Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 1,
+  "sold_at": "2026-08-08T18:06:17.736399Z"
+ },
+ {
+  "id": "1005987166259643010",
+  "created_at": "2026-08-07T23:53:50.774322Z",
+  "type": "buy_now",
+  "price": 535,
+  "state": "sold",
+  "reference": {
+   "base_price": 186,
+   "float_factor": 1.1150656,
+   "predicted_price": 207,
+   "quantity": 4819,
+   "last_updated": "2026-08-07T23:53:50.773107Z"
+  },
+  "item": {
+   "def_index": 61,
+   "paint_index": 830,
+   "paint_seed": 792,
+   "float_value": 0.042703740298748016,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "USP-S | Alpine Camo (Factory New)",
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "USP-S | Alpine Camo",
+   "wear_name": "Factory New",
+   "collection": "The Sport & Field Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-07T23:57:43.917779Z"
+ },
+ {
+  "id": "952239314442518718",
+  "created_at": "2026-03-12T16:19:04.314395Z",
+  "type": "buy_now",
+  "price": 14999,
+  "state": "sold",
+  "reference": {
+   "base_price": 180,
+   "float_factor": 1.72601,
+   "predicted_price": 311,
+   "quantity": 4048,
+   "last_updated": "2026-08-05T18:51:35.304408Z"
+  },
+  "item": {
+   "def_index": 61,
+   "paint_index": 830,
+   "paint_seed": 674,
+   "float_value": 0.002916836878284812,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "USP-S | Alpine Camo (Factory New)",
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "USP-S | Alpine Camo",
+   "wear_name": "Factory New",
+   "collection": "The Sport & Field Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 4,
+  "sold_at": "2026-08-05T19:34:00.711644Z"
+ },
+ {
+  "id": "1004130644651020051",
+  "created_at": "2026-08-02T20:56:41.530644Z",
+  "type": "buy_now",
+  "price": 416,
+  "state": "sold",
+  "reference": {
+   "base_price": 175,
+   "float_factor": 2.13714,
+   "predicted_price": 374,
+   "quantity": 4020,
+   "last_updated": "2026-08-09T09:00:10.35912Z"
+  },
+  "item": {
+   "def_index": 61,
+   "paint_index": 830,
+   "paint_seed": 38,
+   "float_value": 0.0005745681119151413,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "USP-S | Alpine Camo (Factory New)",
+   "low_rank": 767,
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "USP-S | Alpine Camo",
+   "wear_name": "Factory New",
+   "collection": "The Sport & Field Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 1,
+  "sold_at": "2026-08-09T11:17:47.157551Z"
+ },
+ {
+  "id": "991103675336363031",
+  "created_at": "2026-06-27T22:12:10.01667Z",
+  "type": "buy_now",
+  "price": 400,
+  "state": "sold",
+  "reference": {
+   "base_price": 38,
+   "float_factor": 1,
+   "predicted_price": 38,
+   "quantity": 490,
+   "last_updated": "2026-08-08T22:54:04.801059Z"
+  },
+  "item": {
+   "def_index": 28,
+   "paint_index": 958,
+   "paint_seed": 39,
+   "float_value": 9.068929648492485e-05,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "Negev | Ultralight (Factory New)",
+   "low_rank": 402,
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "Negev | Ultralight",
+   "wear_name": "Factory New",
+   "collection": "The Fracture Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 1,
+  "sold_at": "2026-08-09T04:34:44.357542Z"
+ },
+ {
+  "id": "1003731258825638681",
+  "created_at": "2026-08-01T18:29:40.52981Z",
+  "type": "buy_now",
+  "price": 1038,
+  "state": "sold",
+  "reference": {
+   "base_price": 340,
+   "float_factor": 1.98201,
+   "predicted_price": 674,
+   "quantity": 655,
+   "last_updated": "2026-08-08T18:33:31.276337Z"
+  },
+  "item": {
+   "def_index": 34,
+   "paint_index": 1423,
+   "paint_seed": 641,
+   "float_value": 0.00010447615932207555,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 4,
+   "quality": 4,
+   "market_hash_name": "MP9 | Urban Sovereign (Factory New)",
+   "low_rank": 70,
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Restricted",
+   "type_name": "Skin",
+   "item_name": "MP9 | Urban Sovereign",
+   "wear_name": "Factory New",
+   "collection": "The Dead Hand Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 2,
+  "sold_at": "2026-08-08T20:33:39.777394Z"
+ },
+ {
+  "id": "1006128474429196748",
+  "created_at": "2026-08-08T09:15:21.26739Z",
+  "type": "buy_now",
+  "price": 7052,
+  "state": "sold",
+  "reference": {
+   "base_price": 5466,
+   "float_factor": 1.3032986,
+   "predicted_price": 7124,
+   "quantity": 255,
+   "last_updated": "2026-08-08T09:14:25.914069Z"
+  },
+  "item": {
+   "def_index": 30,
+   "paint_index": 614,
+   "paint_seed": 341,
+   "float_value": 0.0015219275373965502,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 5,
+   "quality": 4,
+   "market_hash_name": "Tec-9 | Fuel Injector (Factory New)",
+   "stickers": [
+    {
+     "stickerId": 198,
+     "slot": 0,
+     "name": "Sticker | Fnatic | DreamHack 2014",
+     "reference": {
+      "price": 2480,
+      "quantity": 53,
+      "updated_at": "2026-08-08T04:20:43.804351Z"
+     }
+    },
+    {
+     "stickerId": 198,
+     "slot": 1,
+     "name": "Sticker | Fnatic | DreamHack 2014",
+     "reference": {
+      "price": 2480,
+      "quantity": 53,
+      "updated_at": "2026-08-08T04:20:43.804351Z"
+     }
+    },
+    {
+     "stickerId": 198,
+     "slot": 2,
+     "name": "Sticker | Fnatic | DreamHack 2014",
+     "reference": {
+      "price": 2480,
+      "quantity": 53,
+      "updated_at": "2026-08-08T04:20:43.804351Z"
+     }
+    },
+    {
+     "stickerId": 198,
+     "slot": 3,
+     "name": "Sticker | Fnatic | DreamHack 2014",
+     "reference": {
+      "price": 2480,
+      "quantity": 53,
+      "updated_at": "2026-08-08T04:20:43.804351Z"
+     }
+    }
+   ],
+   "low_rank": 327,
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Classified",
+   "type_name": "Skin",
+   "item_name": "Tec-9 | Fuel Injector",
+   "wear_name": "Factory New",
+   "collection": "The Gamma 2 Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-08T09:15:21.429891Z"
+ },
+ {
+  "id": "1005460393247770534",
+  "created_at": "2026-08-06T13:00:38.301241Z",
+  "type": "buy_now",
+  "price": 72,
+  "state": "sold",
+  "reference": {
+   "base_price": 31,
+   "float_factor": 1,
+   "predicted_price": 31,
+   "quantity": 789,
+   "last_updated": "2026-08-10T07:03:41.671028Z"
+  },
+  "item": {
+   "def_index": 2,
+   "paint_index": 1169,
+   "paint_seed": 607,
+   "float_value": 0.016764461994171143,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "Dual Berettas | Hideout (Factory New)",
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "Dual Berettas | Hideout",
+   "wear_name": "Factory New",
+   "collection": "The Kilowatt Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-10T11:52:52.891778Z"
+ },
+ {
+  "id": "1006886918484528269",
+  "created_at": "2026-08-10T11:29:08.42158Z",
+  "type": "buy_now",
+  "price": 30,
+  "state": "sold",
+  "reference": {
+   "base_price": 31,
+   "float_factor": 1,
+   "predicted_price": 31,
+   "quantity": 789,
+   "last_updated": "2026-08-10T11:28:54.454723Z"
+  },
+  "item": {
+   "def_index": 2,
+   "paint_index": 1169,
+   "paint_seed": 229,
+   "float_value": 0.06745219230651855,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 3,
+   "quality": 4,
+   "market_hash_name": "Dual Berettas | Hideout (Factory New)",
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Mil-Spec Grade",
+   "type_name": "Skin",
+   "item_name": "Dual Berettas | Hideout",
+   "wear_name": "Factory New",
+   "collection": "The Kilowatt Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-10T11:47:50.564237Z"
+ },
+ {
+  "id": "1006884014566541697",
+  "created_at": "2026-08-10T11:17:36.073896Z",
+  "type": "buy_now",
+  "price": 426,
+  "state": "sold",
+  "reference": {
+   "base_price": 581,
+   "float_factor": 1.0191631,
+   "predicted_price": 592,
+   "quantity": 945,
+   "last_updated": "2026-08-10T11:16:52.900165Z"
+  },
+  "item": {
+   "def_index": 61,
+   "paint_index": 1173,
+   "paint_seed": 540,
+   "float_value": 0.10608265548944473,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 5,
+   "quality": 4,
+   "market_hash_name": "USP-S | Jawbreaker (Minimal Wear)",
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Classified",
+   "type_name": "Skin",
+   "item_name": "USP-S | Jawbreaker",
+   "wear_name": "Minimal Wear",
+   "collection": "The Kilowatt Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-10T11:17:36.08428Z"
+ },
+ {
+  "id": "1006879983009924565",
+  "created_at": "2026-08-10T11:01:34.875993Z",
+  "type": "buy_now",
+  "price": 565,
+  "state": "sold",
+  "reference": {
+   "base_price": 581,
+   "float_factor": 0.99346375,
+   "predicted_price": 577,
+   "quantity": 945,
+   "last_updated": "2026-08-10T11:01:32.274701Z"
+  },
+  "item": {
+   "def_index": 61,
+   "paint_index": 1173,
+   "paint_seed": 917,
+   "float_value": 0.14286434650421143,
+   "is_stattrak": false,
+   "is_souvenir": false,
+   "rarity": 5,
+   "quality": 4,
+   "market_hash_name": "USP-S | Jawbreaker (Minimal Wear)",
+   "tradable": 0,
+   "is_commodity": false,
+   "type": "skin",
+   "rarity_name": "Classified",
+   "type_name": "Skin",
+   "item_name": "USP-S | Jawbreaker",
+   "wear_name": "Minimal Wear",
+   "collection": "The Kilowatt Collection"
+  },
+  "is_seller": false,
+  "is_watchlisted": false,
+  "watchers": 0,
+  "sold_at": "2026-08-10T11:13:53.566436Z"
+ }
+]

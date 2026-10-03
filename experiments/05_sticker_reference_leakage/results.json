@@ -1,0 +1,361 @@
+{
+  "lag_all": {
+    "model": "premium_catboost",
+    "note": "reused from 02_model_comparison/premium_catboost",
+    "params": {
+      "quantile_mode": "multi",
+      "iterations": 3000,
+      "learning_rate": 0.06,
+      "depth": 6,
+      "l2_leaf_reg": 3.0,
+      "max_ctr_complexity": 1,
+      "early_stopping_rounds": 150,
+      "thread_count": -1,
+      "random_seed": 42,
+      "max_train_rows": null
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 1.6909726695702736,
+        "median_ape": 4.682091074100965,
+        "mean_ape": 11.834580661412947,
+        "p90_ape": 25.850831120441377,
+        "within_10pct": 69.66379698744566,
+        "within_20pct": 84.91409227621982,
+        "rmse_log": 0.2190629856147876,
+        "median_ratio": 1.0000000000000004,
+        "interval_coverage": 70.06928631443078,
+        "interval_width": 18.502323540859006
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.378889223943149,
+        "median_ape": 4.960349103326989,
+        "mean_ape": 11.389951814169956,
+        "p90_ape": 26.748639030449866,
+        "within_10pct": 68.69718224105598,
+        "within_20pct": 84.4554443389104,
+        "rmse_log": 0.20648159372707778,
+        "median_ratio": 0.9973749011491422,
+        "interval_coverage": 65.86359319061883,
+        "interval_width": 18.065138939331554
+      }
+    },
+    "size_mb": 6.23,
+    "fit_minutes": 21.8,
+    "info": {
+      "multi_best_iteration": 2526,
+      "fit_seconds": 1309.6
+    },
+    "finished_at": "2026-10-02T19:27:23+00:00"
+  },
+  "lag_30": {
+    "model": "premium_catboost",
+    "note": "",
+    "params": {
+      "quantile_mode": "multi",
+      "iterations": 3000,
+      "learning_rate": 0.06,
+      "depth": 6,
+      "l2_leaf_reg": 3.0,
+      "max_ctr_complexity": 1,
+      "has_time": false,
+      "early_stopping_rounds": 150,
+      "thread_count": -1,
+      "random_seed": 42,
+      "max_train_rows": null
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 1.731918160591203,
+        "median_ape": 4.7066656822500015,
+        "mean_ape": 11.859952161606898,
+        "p90_ape": 25.785149832472925,
+        "within_10pct": 69.56151139144941,
+        "within_20pct": 84.82520122255642,
+        "rmse_log": 0.21859938491157757,
+        "median_ratio": 1.0,
+        "interval_coverage": 70.07537474276391,
+        "interval_width": 18.76979374054567
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.3909511055085577,
+        "median_ape": 4.934401389691975,
+        "mean_ape": 11.337460128592552,
+        "p90_ape": 26.660165636489193,
+        "within_10pct": 68.86826916051729,
+        "within_20pct": 84.45848859014636,
+        "rmse_log": 0.20459043406371583,
+        "median_ratio": 0.9975194188461447,
+        "interval_coverage": 66.23255644041791,
+        "interval_width": 18.492547829518802
+      }
+    },
+    "size_mb": 7.69,
+    "fit_minutes": 21.8,
+    "info": {
+      "multi_best_iteration": 2998,
+      "fit_seconds": 1306.2
+    },
+    "finished_at": "2026-10-03T05:31:34+00:00"
+  },
+  "lag_3": {
+    "model": "premium_catboost",
+    "note": "",
+    "params": {
+      "quantile_mode": "multi",
+      "iterations": 3000,
+      "learning_rate": 0.06,
+      "depth": 6,
+      "l2_leaf_reg": 3.0,
+      "max_ctr_complexity": 1,
+      "has_time": false,
+      "early_stopping_rounds": 150,
+      "thread_count": -1,
+      "random_seed": 42,
+      "max_train_rows": null
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 1.8414239906062901,
+        "median_ape": 4.749552485338458,
+        "mean_ape": 11.968734729396054,
+        "p90_ape": 26.397993934625248,
+        "within_10pct": 69.36302862779003,
+        "within_20pct": 84.53295666256713,
+        "rmse_log": 0.22523114933207164,
+        "median_ratio": 1.0,
+        "interval_coverage": 70.10946994142931,
+        "interval_width": 18.987602019120136
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.4209485968831341,
+        "median_ape": 5.015919174449116,
+        "mean_ape": 11.558230375236025,
+        "p90_ape": 27.324917993730807,
+        "within_10pct": 68.27768442073987,
+        "within_20pct": 84.12057670295414,
+        "rmse_log": 0.2075046574636668,
+        "median_ratio": 1.002302493884934,
+        "interval_coverage": 67.4070285672536,
+        "interval_width": 18.474662686817776
+      }
+    },
+    "size_mb": 7.48,
+    "fit_minutes": 22.0,
+    "info": {
+      "multi_best_iteration": 2895,
+      "fit_seconds": 1317.5
+    },
+    "finished_at": "2026-10-03T05:53:35+00:00"
+  },
+  "subsets": {
+    "rows": [
+      {
+        "variant": "lag_all",
+        "subset": "all test",
+        "rows": 164244,
+        "median_ape": 4.960349103326989,
+        "mean_ape": 11.389951814169956,
+        "mae_usd": 1.378889223943149,
+        "median_ratio": 0.9973749011491422
+      },
+      {
+        "variant": "lag_all",
+        "subset": "crafts",
+        "rows": 29347,
+        "median_ape": 4.358304381130401,
+        "mean_ape": 14.40056627641767,
+        "mae_usd": 4.63198374542115,
+        "median_ratio": 0.9974640746059888
+      },
+      {
+        "variant": "lag_all",
+        "subset": "fresh crafts (all sticker prices <=3d)",
+        "rows": 27375,
+        "median_ape": 4.313185558828673,
+        "mean_ape": 14.529846462483473,
+        "mae_usd": 4.511365823106719,
+        "median_ratio": 0.9971217708136417
+      },
+      {
+        "variant": "lag_all",
+        "subset": "crafts with a price 3-30d late",
+        "rows": 1972,
+        "median_ape": 4.992717872780809,
+        "mean_ape": 12.605918663054997,
+        "mae_usd": 6.306383148746465,
+        "median_ratio": 1.0027454896146446
+      },
+      {
+        "variant": "lag_all",
+        "subset": "stale crafts (some price >30d late)",
+        "rows": 0,
+        "median_ape": NaN,
+        "mean_ape": NaN,
+        "mae_usd": NaN,
+        "median_ratio": NaN
+      },
+      {
+        "variant": "lag_30",
+        "subset": "all test",
+        "rows": 164244,
+        "median_ape": 4.934401389691975,
+        "mean_ape": 11.337460128592552,
+        "mae_usd": 1.3909511055085577,
+        "median_ratio": 0.9975194188461447
+      },
+      {
+        "variant": "lag_30",
+        "subset": "crafts",
+        "rows": 29347,
+        "median_ape": 4.395556472658603,
+        "mean_ape": 14.372233984835999,
+        "mae_usd": 4.63920521595048,
+        "median_ratio": 0.9970675698352625
+      },
+      {
+        "variant": "lag_30",
+        "subset": "fresh crafts (all sticker prices <=3d)",
+        "rows": 27375,
+        "median_ape": 4.345321959605973,
+        "mean_ape": 14.52352808469732,
+        "mae_usd": 4.431318219129037,
+        "median_ratio": 0.9967211900067258
+      },
+      {
+        "variant": "lag_30",
+        "subset": "crafts with a price 3-30d late",
+        "rows": 1972,
+        "median_ape": 5.182311479662992,
+        "mean_ape": 12.271992613789443,
+        "mae_usd": 7.525060458337406,
+        "median_ratio": 1.00269972208282
+      },
+      {
+        "variant": "lag_30",
+        "subset": "stale crafts (some price >30d late)",
+        "rows": 0,
+        "median_ape": NaN,
+        "mean_ape": NaN,
+        "mae_usd": NaN,
+        "median_ratio": NaN
+      },
+      {
+        "variant": "lag_3",
+        "subset": "all test",
+        "rows": 164244,
+        "median_ape": 5.015919174449116,
+        "mean_ape": 11.558230375236025,
+        "mae_usd": 1.4209485968831341,
+        "median_ratio": 1.002302493884934
+      },
+      {
+        "variant": "lag_3",
+        "subset": "crafts",
+        "rows": 29347,
+        "median_ape": 4.627529745094236,
+        "mean_ape": 15.13919818935761,
+        "mae_usd": 4.863414785848565,
+        "median_ratio": 1.0034389546078717
+      },
+      {
+        "variant": "lag_3",
+        "subset": "fresh crafts (all sticker prices <=3d)",
+        "rows": 27375,
+        "median_ape": 4.56642032676403,
+        "mean_ape": 15.243323369637674,
+        "mae_usd": 4.7122505933236845,
+        "median_ratio": 1.0034219509200546
+      },
+      {
+        "variant": "lag_3",
+        "subset": "crafts with a price 3-30d late",
+        "rows": 1972,
+        "median_ape": 5.443799969515092,
+        "mean_ape": 13.693748488461683,
+        "mae_usd": 6.961852803276871,
+        "median_ratio": 1.0036909702123118
+      },
+      {
+        "variant": "lag_3",
+        "subset": "stale crafts (some price >30d late)",
+        "rows": 0,
+        "median_ape": NaN,
+        "mean_ape": NaN,
+        "mae_usd": NaN,
+        "median_ratio": NaN
+      }
+    ],
+    "lag_share": [
+      {
+        "sticker price lag": "<=3 days",
+        "share of train crafts %": 27.36381322957199,
+        "share of test crafts %": 93.28040344839337
+      },
+      {
+        "sticker price lag": "3-30 days",
+        "share of train crafts %": 36.679961089494164,
+        "share of test crafts %": 6.719596551606638
+      },
+      {
+        "sticker price lag": ">30 days or unknown",
+        "share of train crafts %": 35.95622568093385,
+        "share of test crafts %": 0.0
+      }
+    ]
+  }
+}

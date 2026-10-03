@@ -1,0 +1,215 @@
+{
+  "analysis": {
+    "budget": {
+      "sticker_value": [
+        {
+          "sticker_value": "none",
+          "rows": 134897,
+          "share_of_rows": 82.13207179562116,
+          "share_of_error": 39.977808536092176,
+          "median_ape": 5.109741921695329,
+          "mae_usd": 0.6711747090034922
+        },
+        {
+          "sticker_value": "<$1",
+          "rows": 14495,
+          "share_of_rows": 8.825284333065438,
+          "share_of_error": 5.787509529855369,
+          "median_ape": 3.6265462708284866,
+          "mae_usd": 0.9042580638774618
+        },
+        {
+          "sticker_value": "$1-5",
+          "rows": 6411,
+          "share_of_rows": 3.903338934755608,
+          "share_of_error": 5.787409795031459,
+          "median_ape": 4.0826318739866485,
+          "mae_usd": 2.044454026232687
+        },
+        {
+          "sticker_value": "$5-20",
+          "rows": 4879,
+          "share_of_rows": 2.9705803560556245,
+          "share_of_error": 6.24708975955744,
+          "median_ape": 4.922937081791782,
+          "mae_usd": 2.8997851321878376
+        },
+        {
+          "sticker_value": "$20-100",
+          "rows": 2303,
+          "share_of_rows": 1.4021821192859405,
+          "share_of_error": 6.808782862972043,
+          "median_ape": 8.012462976724906,
+          "mae_usd": 6.695676109963552
+        },
+        {
+          "sticker_value": "$100-500",
+          "rows": 772,
+          "share_of_rows": 0.4700323908331506,
+          "share_of_error": 9.584665443738691,
+          "median_ape": 13.71795497050935,
+          "mae_usd": 28.117619451811294
+        },
+        {
+          "sticker_value": ">$500",
+          "rows": 487,
+          "share_of_rows": 0.2965100703830886,
+          "share_of_error": 25.806734072752803,
+          "median_ape": 19.152671892809366,
+          "mae_usd": 120.01153104887901
+        }
+      ],
+      "price_band": [
+        {
+          "price_band": "<$1",
+          "rows": 69160,
+          "share_of_rows": 42.10808309588174,
+          "share_of_error": 1.2435570554584994,
+          "median_ape": 8.295310094647823,
+          "mae_usd": 0.040722049000086205
+        },
+        {
+          "price_band": "$1-5",
+          "rows": 37132,
+          "share_of_rows": 22.607827378777916,
+          "share_of_error": 3.912283090566964,
+          "median_ape": 4.676966488703471,
+          "mae_usd": 0.23861669253816623
+        },
+        {
+          "price_band": "$5-20",
+          "rows": 27704,
+          "share_of_rows": 16.867587248240422,
+          "share_of_error": 9.19107239258945,
+          "median_ape": 3.434336541666383,
+          "mae_usd": 0.7513505335474122
+        },
+        {
+          "price_band": "$20-100",
+          "rows": 23546,
+          "share_of_rows": 14.335987920411094,
+          "share_of_error": 27.008253082142907,
+          "median_ape": 2.8637029310717788,
+          "mae_usd": 2.597755337075386
+        },
+        {
+          "price_band": "$100-500",
+          "rows": 6173,
+          "share_of_rows": 3.758432575923626,
+          "share_of_error": 30.351967357176797,
+          "median_ape": 2.723610823713479,
+          "mae_usd": 11.135493285788232
+        },
+        {
+          "price_band": ">$500",
+          "rows": 529,
+          "share_of_rows": 0.322081780765203,
+          "share_of_error": 28.292867022065376,
+          "median_ape": 3.4375680863903293,
+          "mae_usd": 121.12678139848789
+        }
+      ],
+      "has_charm": [
+        {
+          "has_charm": "charm",
+          "rows": 7921,
+          "share_of_rows": 4.82270280801734,
+          "share_of_error": 19.729987104991903,
+          "median_ape": 4.108911862630708,
+          "mae_usd": 5.6411244255780835
+        },
+        {
+          "has_charm": "no charm",
+          "rows": 156323,
+          "share_of_rows": 95.17729719198266,
+          "share_of_error": 80.27001289500811,
+          "median_ape": 5.012485893609946,
+          "mae_usd": 1.1629186691805722
+        }
+      ]
+    },
+    "novel_sticker_set_share_pct": 42.430231369475585,
+    "extrapolation": [
+      {
+        "sticker_value": "$1-5",
+        "rows (novel)": 2917.0,
+        "rows (seen in train)": 3494.0,
+        "median_ape (novel)": 3.9694532492047503,
+        "median_ape (seen in train)": 4.180323573655733
+      },
+      {
+        "sticker_value": "$100-500",
+        "rows (novel)": 416.0,
+        "rows (seen in train)": 356.0,
+        "median_ape (novel)": 13.391380940995678,
+        "median_ape (seen in train)": 14.22738535840528
+      },
+      {
+        "sticker_value": "$20-100",
+        "rows (novel)": 1200.0,
+        "rows (seen in train)": 1103.0,
+        "median_ape (novel)": 7.988161271012712,
+        "median_ape (seen in train)": 8.056062967236592
+      },
+      {
+        "sticker_value": "$5-20",
+        "rows (novel)": 2368.0,
+        "rows (seen in train)": 2511.0,
+        "median_ape (novel)": 4.600200486692842,
+        "median_ape (seen in train)": 5.238878989915683
+      },
+      {
+        "sticker_value": "<$1",
+        "rows (novel)": 5234.0,
+        "rows (seen in train)": 9261.0,
+        "median_ape (novel)": 3.640181450159706,
+        "median_ape (seen in train)": 3.622109784875339
+      },
+      {
+        "sticker_value": ">$500",
+        "rows (novel)": 317.0,
+        "rows (seen in train)": 170.0,
+        "median_ape (novel)": 21.301846715532772,
+        "median_ape (seen in train)": 17.922207890277864
+      }
+    ],
+    "noise_floor": [
+      {
+        "price_band": "all",
+        "rows": 31374,
+        "floor_mdape_same_day_comparables": 3.1578947368421053,
+        "model_mdape": 6.066262245733288
+      },
+      {
+        "price_band": "<$1",
+        "rows": 16990,
+        "floor_mdape_same_day_comparables": 4.166666666666666,
+        "model_mdape": 9.186581837640537
+      },
+      {
+        "price_band": "$1-5",
+        "rows": 7556,
+        "floor_mdape_same_day_comparables": 2.6975051975051976,
+        "model_mdape": 5.024791867874591
+      },
+      {
+        "price_band": "$5-20",
+        "rows": 4220,
+        "floor_mdape_same_day_comparables": 2.580475292598821,
+        "model_mdape": 3.2508467918252975
+      },
+      {
+        "price_band": "$20-100",
+        "rows": 2140,
+        "floor_mdape_same_day_comparables": 2.791249315346516,
+        "model_mdape": 2.6671864788654487
+      },
+      {
+        "price_band": ">$100",
+        "rows": 468,
+        "floor_mdape_same_day_comparables": 2.674414311050576,
+        "model_mdape": 2.221220928162859
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# служебные файлы обучения и логи
+catboost_info/
+*.log
+
+# локальные настройки и секреты (пример настроек — в .env.example)
+.env
+*.local.toml
+*_auth.json
+*.pem
+*.key
+
+# тяжёлые файлы живут в рабочей папке (SKINPRICE_WORKSPACE), а не в git
+workspace/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.cbm
+*.pt
+*.joblib
+*.pkl
+
+# редакторы и ОС
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

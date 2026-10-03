@@ -1,0 +1,10 @@
+# Default parameters for `skinprice train premium_catboost`.
+# Chosen in experiments/03_model_compression: one MultiQuantile model, no categorical
+# combinations, no skin+seed key (default feature spec) -> 6 MB instead of 9 GB.
+
+[params]
+quantile_mode = "multi"
+max_ctr_complexity = 1
+iterations = 3000
+learning_rate = 0.06
+depth = 6

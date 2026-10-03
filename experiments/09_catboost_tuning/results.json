@@ -1,0 +1,275 @@
+{
+  "baseline": {
+    "model": "premium_catboost",
+    "note": "reused from 02_model_comparison/premium_catboost",
+    "params": {
+      "quantile_mode": "multi",
+      "iterations": 3000,
+      "learning_rate": 0.06,
+      "depth": 6,
+      "l2_leaf_reg": 3.0,
+      "max_ctr_complexity": 1,
+      "early_stopping_rounds": 150,
+      "thread_count": -1,
+      "random_seed": 42,
+      "max_train_rows": null
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 1.6909726695702736,
+        "median_ape": 4.682091074100965,
+        "mean_ape": 11.834580661412947,
+        "p90_ape": 25.850831120441377,
+        "within_10pct": 69.66379698744566,
+        "within_20pct": 84.91409227621982,
+        "rmse_log": 0.2190629856147876,
+        "median_ratio": 1.0000000000000004,
+        "interval_coverage": 70.06928631443078,
+        "interval_width": 18.502323540859006
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.378889223943149,
+        "median_ape": 4.960349103326989,
+        "mean_ape": 11.389951814169956,
+        "p90_ape": 26.748639030449866,
+        "within_10pct": 68.69718224105598,
+        "within_20pct": 84.4554443389104,
+        "rmse_log": 0.20648159372707778,
+        "median_ratio": 0.9973749011491422,
+        "interval_coverage": 65.86359319061883,
+        "interval_width": 18.065138939331554
+      }
+    },
+    "size_mb": 6.23,
+    "fit_minutes": 21.8,
+    "info": {
+      "multi_best_iteration": 2526,
+      "fit_seconds": 1309.6
+    },
+    "finished_at": "2026-10-02T19:27:23+00:00"
+  },
+  "has_time": {
+    "model": "premium_catboost",
+    "note": "",
+    "params": {
+      "quantile_mode": "multi",
+      "iterations": 3000,
+      "learning_rate": 0.06,
+      "depth": 6,
+      "l2_leaf_reg": 3.0,
+      "max_ctr_complexity": 1,
+      "has_time": true,
+      "early_stopping_rounds": 150,
+      "thread_count": -1,
+      "random_seed": 42,
+      "max_train_rows": null
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 1.7239771172023937,
+        "median_ape": 4.714991462749852,
+        "mean_ape": 11.844023224317736,
+        "p90_ape": 25.925474773628093,
+        "within_10pct": 69.54324610645008,
+        "within_20pct": 84.85564336422196,
+        "rmse_log": 0.21839012522715598,
+        "median_ratio": 1.0000000000000004,
+        "interval_coverage": 70.0644155717643,
+        "interval_width": 18.56812136923728
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.3907658088539228,
+        "median_ape": 4.989969742841986,
+        "mean_ape": 11.408738691110559,
+        "p90_ape": 26.737371862847816,
+        "within_10pct": 68.51209176590926,
+        "within_20pct": 84.40612746888775,
+        "rmse_log": 0.20502707905835282,
+        "median_ratio": 1.001688122053963,
+        "interval_coverage": 67.0496334721512,
+        "interval_width": 18.39658875075211
+      }
+    },
+    "size_mb": 6.1,
+    "fit_minutes": 18.7,
+    "info": {
+      "multi_best_iteration": 2466,
+      "fit_seconds": 1119.7
+    },
+    "finished_at": "2026-10-03T07:49:37+00:00"
+  },
+  "separate_mae": {
+    "model": "premium_catboost",
+    "note": "reused from 03_model_compression/separate_ctr1_no_seed_key",
+    "params": {
+      "quantile_mode": "separate",
+      "iterations": 3000,
+      "learning_rate": 0.06,
+      "depth": 6,
+      "l2_leaf_reg": 3.0,
+      "max_ctr_complexity": 1,
+      "has_time": false,
+      "early_stopping_rounds": 150,
+      "thread_count": -1,
+      "random_seed": 42,
+      "max_train_rows": null
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 1.7024549749815463,
+        "median_ape": 4.70126141197076,
+        "mean_ape": 11.792129550026697,
+        "p90_ape": 25.717297785198728,
+        "within_10pct": 69.73929349877622,
+        "within_20pct": 85.07239141288068,
+        "rmse_log": 0.2209494801412916,
+        "median_ratio": 0.9999999999999996,
+        "interval_coverage": 70.27629287775655,
+        "interval_width": 18.640392087298892
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.3994606015148152,
+        "median_ape": 4.927678910923938,
+        "mean_ape": 11.215203748787184,
+        "p90_ape": 26.183458334380894,
+        "within_10pct": 68.98090645624802,
+        "within_20pct": 84.67889237963031,
+        "rmse_log": 0.20762688519330683,
+        "median_ratio": 0.9972556502994805,
+        "interval_coverage": 69.47711940771048,
+        "interval_width": 19.357139982271942
+      }
+    },
+    "size_mb": 9.19,
+    "fit_minutes": 27.3,
+    "info": {
+      "point_best_iteration": 2688,
+      "low_best_iteration": 1228,
+      "high_best_iteration": 1435,
+      "fit_seconds": 1640.6
+    },
+    "finished_at": "2026-10-03T07:30:09+00:00"
+  },
+  "depth8": {
+    "model": "premium_catboost",
+    "note": "",
+    "params": {
+      "quantile_mode": "multi",
+      "iterations": 3000,
+      "learning_rate": 0.06,
+      "depth": 8,
+      "l2_leaf_reg": 3.0,
+      "max_ctr_complexity": 1,
+      "has_time": false,
+      "early_stopping_rounds": 150,
+      "thread_count": -1,
+      "random_seed": 42,
+      "max_train_rows": null
+    },
+    "features": {
+      "groups": [
+        "identity",
+        "pattern_seed",
+        "float",
+        "float_rank",
+        "pattern_extras",
+        "reference",
+        "stickers",
+        "keychains",
+        "market_history"
+      ],
+      "drop": [
+        "skin_seed_key"
+      ]
+    },
+    "metrics": {
+      "val": {
+        "rows": 82123,
+        "mae_usd": 1.6967291507042797,
+        "median_ape": 4.61600601912164,
+        "mean_ape": 11.659421507716765,
+        "p90_ape": 25.46039836898751,
+        "within_10pct": 69.92438172010277,
+        "within_20pct": 85.23069054954155,
+        "rmse_log": 0.2157746459762129,
+        "median_ratio": 1.0,
+        "interval_coverage": 70.0644155717643,
+        "interval_width": 18.375851308162936
+      },
+      "test": {
+        "rows": 164244,
+        "mae_usd": 1.4131561369576324,
+        "median_ape": 4.907493534758026,
+        "mean_ape": 11.185369345134655,
+        "p90_ape": 26.253990754817185,
+        "within_10pct": 68.80007793283164,
+        "within_20pct": 84.56869048488834,
+        "rmse_log": 0.20239418923464925,
+        "median_ratio": 1.0016617396435263,
+        "interval_coverage": 66.74581719880179,
+        "interval_width": 18.24131314635333
+      }
+    },
+    "size_mb": 13.01,
+    "fit_minutes": 22.5,
+    "info": {
+      "multi_best_iteration": 1517,
+      "fit_seconds": 1348.9
+    },
+    "finished_at": "2026-10-03T08:12:08+00:00"
+  }
+}
